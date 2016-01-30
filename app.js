@@ -5,7 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var sql = require('msnodesql')
-var conn_str =  Driver={SQL Server Native Client 11.0};Server=tcp:backendserver.database.windows.net,1433;Database=backenddatabase;Uid=backendadmin@backendserver;Pwd=Backendadmin123;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;
+var conn_str = Driver={SQL Server Native Client 11.0};Server=tcp:backendserver.database.windows.net,1433;Database=backenddatabase;Uid=backendadmin@backendserver;Pwd=Admin123;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;
 
 sql.open(conn_str, function (err, conn) {
     if (err) {
