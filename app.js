@@ -16,8 +16,9 @@ var connection = new Connection(config);
 connection.on('connect', function(err) {
 // If no error, then good to proceed.
     console.log("Connected");
-    window.alert("Connected");
 });
+
+
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
